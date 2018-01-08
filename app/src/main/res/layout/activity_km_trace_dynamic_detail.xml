@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/txt_white">
+
+    <!-- head -->
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/title_bg" >
+
+        <LinearLayout
+            android:id="@+id/layoutBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            >
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="14dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/txtback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="返回"
+                android:textColor="@color/title_black"
+                android:textSize="@dimen/title_right" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="动态详情"
+            android:textColor="@color/title_black"
+            android:textSize="@dimen/title_center" />
+
+        <TextView
+            android:id="@+id/delDynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="删除动态"
+            android:textColor="@color/title_black"
+            android:textSize="@dimen/title_right" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:orientation="vertical"
+        android:background="@color/txt_white"
+        >
+    </LinearLayout>
+
+    <cn.lottery.framework.widget.scrollView.BottomScrollView
+        android:id="@+id/scrollViewParent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <!-- 评论 -->
+        <cn.lottery.framework.widget.listview.NoScrollListView
+            android:id="@+id/listViewBottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/bg_gray_3"
+            android:dividerHeight="5dp"
+            android:descendantFocusability="beforeDescendants"
+            >
+        </cn.lottery.framework.widget.listview.NoScrollListView>
+
+    </cn.lottery.framework.widget.scrollView.BottomScrollView>
+
+</LinearLayout>

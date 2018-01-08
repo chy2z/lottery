@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="151dp"
+    android:background="#00ffffff"
+    android:orientation="vertical"     
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:background="@drawable/container_corners"
+        android:gravity="center"
+        android:orientation="vertical" >
+           
+           <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" 
+           
+           android:background="@drawable/container_corners_orange"
+            >
+        
+        <TextView
+            android:id="@+id/title"
+             android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="消息提示"
+                android:textColor="@color/bg_light_white"
+                android:textSize="18sp"
+            android:visibility="visible" />
+        
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@color/f_c_white"
+            >
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="详细的提示内容在这里展示"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/pb1"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:indeterminateDrawable="@drawable/f_image_progress_popbox"
+                android:visibility="gone" />
+
+        </LinearLayout>
+        
+           <LinearLayout           
+      
+        android:layout_width="match_parent"
+        android:layout_height="1dp"       
+        android:background="@color/bg_gray_3"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"      
+        android:layout_marginRight="10dp"   
+        android:orientation="horizontal" >    
+         </LinearLayout>  
+        
+        
+         <LinearLayout           
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"       
+        android:background="@drawable/container_corners_white"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"      
+        android:layout_marginRight="10dp" 
+        android:orientation="horizontal" >     
+             
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/f_selector_btn_popbox"
+            android:text="确定"
+            android:textColor="@drawable/f_selector_textview_popbox"
+            android:textSize="18sp"
+            android:visibility="gone" >
+
+            <requestFocus />
+        </Button>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/f_selector_btn_popbox"
+            android:text="取消"
+            android:textColor="@drawable/f_selector_textview_popbox"
+            android:textSize="18sp"
+            android:visibility="gone" />
+        
+       
+    </LinearLayout>
+        
+    </LinearLayout>
+
+   
+
+</LinearLayout>

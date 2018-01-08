@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_update_dialog_corners"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/container_corners_white">
+
+            <TextView
+                android:id="@+id/dialog_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="添加好友"
+                android:textStyle="bold"
+                android:textColor="@color/bg_black"
+                android:textSize="18sp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/layoutClose"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewClose"
+                    android:layout_width="@dimen/imageclose_width"
+                    android:layout_height="@dimen/imageclose_width"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_fork"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/dialog_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <EditText
+                    android:id="@+id/dialog_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/black_border"
+                    android:ems="10"
+                    android:maxLength="30"
+                    android:hint="请输入好友验证信息"
+                    android:inputType="text"
+                    android:text="我是"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="6dp"
+                    android:textColor="@color/txt_black"
+                    android:textColorHint="#D6E2E1"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/txt_white"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                >
+
+                <Button
+                    android:id="@+id/butselect"
+                    android:text="确定"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/but_corners_ios"
+                    android:textColor="@color/txt_bule"
+                    android:textSize="18sp"
+                    style="?android:attr/borderlessButtonStyle"
+                    />
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/bg_gray"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    >
+                    </LinearLayout>
+
+                <Button
+                    android:id="@+id/butcancel"
+                    android:text="取消"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/but_corners_ios"
+                    android:textColor="@color/txt_bule"
+                    android:textSize="18sp"
+                    style="?android:attr/borderlessButtonStyle"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

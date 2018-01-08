@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/txt_white" >
+
+
+    <ScrollView
+        android:id="@+id/scrollTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/aliwx_search"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@color/aliwx_white">
+                <ImageView
+                    android:id="@+id/aliwx_search_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/aliwx_search_icon" />
+                <view
+                    android:id="@+id/aliwx_search_keyword"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    class="com.alibaba.mobileim.fundamental.widget.WxEditText"
+                    android:drawablePadding="@dimen/aliwx_common_unit_margin"
+                    android:drawableRight="@drawable/aliwx_search_icon_delete_bg"
+                    android:ellipsize="end"
+                    android:freezesText="true"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:hint="@string/aliwx_search_friend_hint"
+                    android:textSize="@dimen/aliwx_second_text_size"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="textNoSuggestions"
+                    android:maxLength="50"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/aliwx_black"
+                    android:textColorHint="#999999"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/contantLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@color/txt_white"
+                    >
+
+                    <ImageView
+                        android:id="@+id/contactHeadimg"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/headbg"
+                        />
+
+                    <TextView
+                        android:id="@+id/contactNickName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="咖忙"
+                        android:textSize="16sp"
+                        android:textColor="@color/fontleft"
+                        />
+
+                    <TextView
+                        android:id="@+id/contactuserid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12sp"
+                        android:layout_weight="1"
+                        android:textAlignment="gravity"
+                        android:gravity="left"
+                        android:text="1111111"
+                        android:textColor="@color/title_bg" />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lineLayout"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bg_gray_3"
+                android:orientation="horizontal"
+                >
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bottom_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_yellow"
+        android:text="确认添加"
+        android:textColor="@color/txt_white"
+        android:textSize="17sp" />
+
+</RelativeLayout>

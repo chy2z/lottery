@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >   
+    <WebView
+        android:id="@+id/webViewPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+     <RelativeLayout
+        android:id="@+id/relativeLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"        
+        >
+
+        <ImageView
+            android:id="@+id/imageViewleft"
+            android:layout_width="@dimen/f_s_image"
+            android:layout_height="@dimen/f_s_image"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/slidingmenu" />
+
+        <TextView
+            android:id="@+id/textViewtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/txt_white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageViewright"
+            android:layout_width="@dimen/f_s_image"
+            android:layout_height="@dimen/f_s_image"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/login" />
+    </RelativeLayout>
+
+</RelativeLayout>

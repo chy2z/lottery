@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    >
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="微信授权"
+        android:id="@+id/butwx"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="153dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QQ授权"
+        android:id="@+id/butqq"
+        android:layout_alignBottom="@+id/butwx"
+        android:layout_toRightOf="@+id/butwx"
+        android:layout_toEndOf="@+id/butwx" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="usertoken"
+        android:id="@+id/butusertoken"
+        android:layout_alignBottom="@+id/butqq"
+        android:layout_toRightOf="@+id/butqq"
+        android:layout_toEndOf="@+id/butqq" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新浪微博授权SSO"
+        android:id="@+id/butsina"
+        android:layout_below="@+id/butwx"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="即时通讯"
+        android:id="@+id/butOpeIM"
+        android:layout_below="@+id/butsina"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:id="@+id/butlogin"
+        android:layout_below="@+id/butsina"
+        android:layout_alignRight="@+id/butusertoken"
+        android:layout_alignEnd="@+id/butusertoken" />
+
+
+</RelativeLayout>

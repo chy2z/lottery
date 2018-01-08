@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <padding
+        android:bottom="4dp"
+        android:left="4dp"
+        android:right="4dp"
+        android:top="4dp" />
+
+    <corners android:radius="0dp" />
+
+    <stroke
+        android:width="10dp"
+        android:color="@color/gridview_cell_item_selected" />
+
+    <gradient
+        android:angle="90"
+        android:centerX="0.5"
+        android:centerY="0.5"
+        android:endColor="@color/gridview_cell_item_selected"
+        android:startColor="@color/gridview_cell_item_selected"
+        android:type="linear" />
+
+</shape>

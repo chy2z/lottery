@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="bg_bule">#38C2A8</drawable>
+    <drawable name="bg_menu_item_nor">#FFFFFF</drawable>
+    <drawable name="bg_menu_item_press">#DADADA</drawable>
+    <drawable name="bg_no_colcor">#B5555555</drawable>
+    <drawable name="bg_white">#FFFFFF</drawable>
+</resources>

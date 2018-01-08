@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="f_d_no_color">#00000000</drawable>
+    <drawable name="f_d_orange">#ff5500</drawable>
+    <drawable name="f_d_white">#FFFFFF</drawable>
+    <drawable name="f_d_black">#323232</drawable>
+    <drawable name="f_d_gray">#EEEEEE</drawable>
+    <drawable name="f_d_bule">#30B6EE</drawable>
+    <drawable name="f_d_green">#62CEBB</drawable>
+
+</resources>

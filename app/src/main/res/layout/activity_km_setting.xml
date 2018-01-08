@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/txt_white">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/title_bg" >
+
+        <LinearLayout
+            android:id="@+id/layoutBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            >
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="14dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="返回"
+                android:textColor="@color/title_black"
+                android:textSize="@dimen/title_right" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@color/title_black"
+            android:textSize="@dimen/title_center" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/editpwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_menu_item"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_left_right"
+            android:paddingRight="@dimen/space_left_right" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                android:src="@drawable/qlhc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="修改登录密码"
+                android:textSize="16sp"
+                android:textColor="@color/fontleft"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:text=""
+                android:textColor="#BBBBBB" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="18dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray_3"  >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/editPayPwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_menu_item"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_left_right"
+            android:paddingRight="@dimen/space_left_right" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/qlhc"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="修改支付密码"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/fontleft"
+                />
+
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="18dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_left" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray_3"  >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/editPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_menu_item"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_left_right"
+            android:paddingRight="@dimen/space_left_right" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/qlhc"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更换手机号码"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:textColor="@color/fontleft"
+                />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="18dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_left" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray_3"  >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/update"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_menu_item"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_left_right"
+            android:paddingRight="@dimen/space_left_right" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/qlhc"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="版本更新"
+                android:textSize="16sp"
+                android:textColor="@color/fontleft"
+                />
+
+            <ImageView
+                android:id="@+id/updateTipImg"
+                android:layout_width="45dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="12dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/news"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="gravity"
+                android:gravity="right"
+                android:text="1.0.0"
+                android:textColor="#BBBBBB" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray_3"  >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/exit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_menu_item"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_left_right"
+            android:paddingRight="@dimen/space_left_right" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                android:src="@drawable/qlhc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="退出登录"
+                android:textSize="16sp"
+                android:textColor="@color/fontleft"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:text=""
+                android:textColor="#BBBBBB" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="12dp"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                android:src="@drawable/btn_left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray_3"  >
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

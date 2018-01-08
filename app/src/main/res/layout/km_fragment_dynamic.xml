@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/txt_white">
+    <cn.lottery.framework.widget.swipeRefreshLayout.mySwipeRefreshLayout
+        android:id="@+id/id_swipe_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+    <cn.lottery.framework.widget.scrollView.BottomScrollView
+        android:id="@+id/scrollViewParent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+            <!-- 评论 -->
+            <cn.lottery.framework.widget.listview.NoScrollListView
+                android:id="@+id/listViewBottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="beforeDescendants"
+                android:divider="@color/bg_gray_3"
+                android:dividerHeight="5dp">
+            </cn.lottery.framework.widget.listview.NoScrollListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/txt_white"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </cn.lottery.framework.widget.scrollView.BottomScrollView>
+    </cn.lottery.framework.widget.swipeRefreshLayout.mySwipeRefreshLayout>
+</RelativeLayout>

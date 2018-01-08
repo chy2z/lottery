@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/gridview_cell_item_selected" >
+        <TextView
+            android:id="@+id/textViewtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/txt_white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_menu_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="uid："
+            android:layout_marginLeft="8dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/txtuid"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text=""
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_menu_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pwd："
+            android:layout_marginLeft="8dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/txtpwd"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text=""
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_menu_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="key："
+            android:layout_marginLeft="8dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/txtappkey"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text=""
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/butLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="login"
+        android:textColor="@color/txt_black"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        android:layout_width="25dip"
+        android:layout_height="25dip"
+        android:layout_above="@+id/copy_right"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/openim_login_progress"
+        android:visibility="gone" />
+
+</LinearLayout>

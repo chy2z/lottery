@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="f_c_no_color">#00ffffff</color>
+    <color name="f_c_white">#FFFFFF</color>
+    <color name="f_c_orange">#ff5500</color>
+    <color name="f_c_black">#323232</color>
+    <color name="f_c_bule">#30B6EE</color>
+    <color name="app_bg">#FFFFFF</color>
+    <color name="title_bg">#f4bc1a</color>
+    <color name="fontleft">#323232</color>
+    <color name="dyred">#E24c4b</color>
+    <color name="dyblue">#1f7ed7</color>
+</resources>

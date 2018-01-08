@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="f_l_0dp">0dp</dimen>
+    <dimen name="f_l_2dp">2dp</dimen>
+    <dimen name="f_l_4dp">4dp</dimen>
+    <dimen name="f_l_6dp">6dp</dimen>
+    <dimen name="f_l_8dp">8dp</dimen>
+    <dimen name="f_l_10dp">10dp</dimen>
+    <dimen name="f_l_12dp">12dp</dimen>
+    <dimen name="f_l_14dp">14dp</dimen>
+    <dimen name="f_l_16dp">16dp</dimen>
+    <dimen name="f_l_18dp">18dp</dimen>
+    <dimen name="f_l_20dp">20dp</dimen>
+    <dimen name="f_l_22dp">22dp</dimen>
+    <dimen name="f_l_24dp">24dp</dimen>
+    <dimen name="f_l_26dp">26dp</dimen>
+    <dimen name="f_l_28dp">28dp</dimen>
+    <dimen name="f_l_30dp">30dp</dimen>
+    <dimen name="f_s_10sp">10sp</dimen>
+    <dimen name="f_s_12sp">12sp</dimen>
+    <dimen name="f_s_14sp">14sp</dimen>
+    <dimen name="f_s_16sp">16sp</dimen>
+    <dimen name="f_s_18sp">18sp</dimen>
+    <dimen name="f_s_20sp">20sp</dimen>
+    <dimen name="f_s_32sp">32sp</dimen>
+    <dimen name="f_s_image">35dp</dimen>
+    <dimen name="f_s_image_40">40dp</dimen>
+    <dimen name="title_center">21sp</dimen>
+    <dimen name="title_left">15sp</dimen>
+    <dimen name="title_right">15sp</dimen>
+    <dimen name="button">18sp</dimen>
+    <dimen name="txtcontent">16sp</dimen>
+    <dimen name="alipypwd">40sp</dimen>
+    <dimen name="goto_height">95dp</dimen>
+    <dimen name="space_left_right">12dp</dimen>
+</resources>

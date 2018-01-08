@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.lottery">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    - <!--      <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+  -->
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <application
+        android:hardwareAccelerated="true"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name="cn.lottery.framework.SApplication"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label,android:icon,android:allowBackup,android:name"
+        >
+        <!--  百度key  -->
+        <meta-data android:name="com.baidu.lbsapi.API_KEY"  android:value="hxox4UhtI58dVzfj6NxGWVtumHNKPQHk" />
+
+        <!--  友盟key  -->
+        <meta-data android:name="UMENG_APPKEY" android:value="58fc533bb27b0a12bf001b7d" />
+        <meta-data android:name="UMENG_MESSAGE_SECRET" android:value="23bc6e82d5e51f5d77a38b0da430a4e0" />
+        <meta-data android:name="UMENG_CHANNEL" android:value="kamangandroid" />
+
+        <!--  友盟社会化分享  -->
+        <activity android:name="com.umeng.socialize.editorpage.ShareActivity" android:excludeFromRecents="true" android:theme="@style/Theme.UMDefault" />
+
+        <!--  微信分享回调  -->
+        <activity android:name="cn.lottery.wxapi.WXEntryActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        -
+        <!--  QQ分享回调-->
+        <activity android:name="com.tencent.tauth.AuthActivity" android:launchMode="singleTask" android:noHistory="true">
+        - <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="tencent101393815" />
+          </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        -
+
+        <!--新浪 -->
+        <activity
+            android:name="cn.lottery.WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" >
+        </activity>
+        <service android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false"></service>
+
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+
+        <!-- 微信支付 -->
+        <activity
+            android:name="cn.lottery.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <receiver
+            android:name="cn.lottery.framework.util.wxpay.AppRegister"
+            android:permission="com.tencent.mm.plugin.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+       <!-- APP activity -->
+        <activity android:name="cn.lottery.app.activity.LoadingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.lottery.app.activity.test.TestMainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.HomePageActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.MaskingLayerActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.web.WebPageActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="wxe98bc63be5256a6e" />
+            </intent-filter>
+            </activity>
+
+
+        <activity
+            android:name="cn.lottery.app.activity.web.WebPageBackActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="wxe98bc63be5256a6e" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+        android:name="cn.lottery.app.activity.upgrade.UpdateDialogActivity"
+        android:configChanges="keyboardHidden|orientation"
+        android:screenOrientation="portrait"
+        android:theme="@style/ActivityDialogStyle"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.scrollpage.ScrollPageActivity"
+            android:screenOrientation="portrait">
+            </activity>
+
+        <activity
+            android:name="cn.lottery.app.activity.SettingActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.login.LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.login.BindPhoneActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.login.EditPasswordActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.login.RegisterActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.login.ImmediateAuthenticationActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.login.CertificationActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.login.ForgetPasswordActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.login.ForgetPasswordInputActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.myself.MyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.myself.MyDataActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.myself.MyWalletActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.myself.MyWalletCashDetailsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.myself.BindAlipayOneActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.myself.MyWalletMoneyCashActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.myself.MyWalletMoneyCashPwdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialog"
+            android:windowSoftInputMode="stateVisible|adjustPan"
+            />
+
+        <activity
+            android:name="cn.lottery.app.activity.myself.MyWalletMoneyForgetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan"
+            />
+
+        <activity
+            android:name="cn.lottery.app.activity.myself.MyWalletMoneyForgetPasswordInputActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan"
+            />
+
+        <activity
+            android:name="cn.lottery.app.activity.myself.MyChangePhoneActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="cn.lottery.app.activity.myself.MyChangePhoneSecondActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name="cn.lottery.app.activity.trace.TraceActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:theme="@style/MainActivityTheme"
+            android:screenOrientation="portrait"   />
+
+        <activity
+            android:name="cn.lottery.app.activity.trace.TraceChatActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.trace.TraceContactActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.trace.TraceAddContactOrTribeActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.trace.TraceDynamicActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.trace.TracePublishingDynamicsActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.trace.TraceDynamicImageActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.trace.TraceDynamicDetailActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"/>
+
+        <!-- 裁剪Activity -->
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+
+        <!-- 即时通讯 -->
+        <activity android:name="cn.lottery.app.activity.openim.OpenimLoginActivity" android:screenOrientation="portrait" />
+        <activity android:name="cn.lottery.app.activity.openim.OpenimFragmentTabs"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:theme="@style/MainActivityTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lottery.app.activity.openim.contact.OpenimSelectContactToSendCardActivity"
+            android:theme="@style/Aliwx_ContentOverlay_default"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.lottery.app.activity.openim.contact.OpenimContactSettingActivity"
+            android:theme="@style/Aliwx_ContentOverlay_default"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.lottery.app.activity.openim.contact.OpenimContactSystemMessageActivity"
+            android:theme="@style/Aliwx_ContentOverlay_default"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.lottery.app.activity.openim.contact.OpenimFindContactActivity"
+            android:theme="@style/Aliwx_ContentOverlay_default" />
+
+        <activity
+            android:name="cn.lottery.app.activity.openim.tribe.OpenimTribeInfoActivity"
+            android:theme="@style/Aliwx_ContentOverlay_default" />
+        <activity
+            android:name="cn.lottery.app.activity.openim.tribe.OpenimSearchTribeActivity"
+            android:theme="@style/Aliwx_ContentOverlay_default" />
+        <activity
+            android:name="cn.lottery.app.activity.openim.tribe.OpenimTribeMsgRecTypeSetActivity"
+            android:theme="@style/Aliwx_ContentOverlay_default" />
+        <activity
+            android:name="cn.lottery.app.activity.openim.tribe.OpenimSetTribeCheckModeActivity"
+            android:theme="@style/Aliwx_ContentOverlay_default" />
+        <activity
+            android:name="cn.lottery.app.activity.openim.tribe.OpenimEditTribeInfoActivity"
+            android:theme="@style/Aliwx_ContentOverlay_default" />
+        <activity
+            android:name="cn.lottery.app.activity.openim.tribe.OpenimEditMyTribeProfileActivity"
+            android:theme="@style/Aliwx_ContentOverlay_default" />
+        <activity
+            android:name="cn.lottery.app.activity.openim.tribe.OpenimTribeMembersActivity"
+            android:theme="@style/Aliwx_ContentOverlay_default" />
+        <activity
+            android:name="cn.lottery.app.activity.openim.tribe.OpenimInviteTribeMemberActivity"
+            android:theme="@style/Aliwx_ContentOverlay_default" />
+        <activity
+            android:name="cn.lottery.app.activity.openim.tribe.OpenimTribeSystemMessageActivity"
+            android:theme="@style/Aliwx_ContentOverlay_default"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.lottery.app.activity.openim.web.OpenimSimpleWebViewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTabStyle" />
+
+        <!-- 升级 -->
+        <service android:name="cn.lottery.framework.service.AppUpdateService" />
+
+        <!-- 百度定位 -->
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
+        </service>
+
+    </application>
+
+</manifest>

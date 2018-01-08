@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aliwx_common_bg_white_color">
+
+    <!-- head -->
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/title_bg" >
+
+        <LinearLayout
+            android:id="@+id/layoutBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            >
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="14dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/txtback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="返回"
+                android:textColor="@color/title_black"
+                android:textSize="@dimen/title_right" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="动态列表"
+            android:textColor="@color/title_black"
+            android:textSize="@dimen/title_center" />
+
+        <TextView
+            android:id="@+id/writeDynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="发布动态"
+            android:textColor="@color/title_black"
+            android:textSize="@dimen/title_right" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:background="@color/txt_white"
+            >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            >
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="我的"
+                android:id="@+id/butMyDy"
+                android:layout_gravity="center"
+                android:background="@drawable/container_corners_orange_btn_left"
+                android:textColor="@color/txt_white"
+                />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="附近"
+                android:id="@+id/butNearDy"
+                android:layout_gravity="center"
+                android:background="@drawable/container_corners_white_btn_center"
+                android:textColor="@color/title_bg"
+                />
+
+            <Button
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="好友"
+                android:id="@+id/butFriendDy"
+                android:background="@drawable/container_corners_white_btn_center"
+                android:textColor="@color/title_bg"
+                />
+
+            <Button
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="关注"
+                android:id="@+id/butAttentionDy"
+                android:background="@drawable/container_corners_white_btn_right"
+                android:textColor="@color/title_bg"
+                />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wx_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" />
+
+</LinearLayout>

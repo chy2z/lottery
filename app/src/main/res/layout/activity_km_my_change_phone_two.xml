@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/txt_white"
+    >
+    <!-- top -->
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/title_bg" >
+
+        <LinearLayout
+            android:id="@+id/layoutBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            >
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="14dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="返回"
+                android:textColor="@color/title_black"
+                android:textSize="@dimen/title_right" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="更改手机号码"
+            android:textColor="@color/title_black"
+            android:textSize="@dimen/title_center" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        >
+
+        <TextView
+            android:id="@+id/txtphone"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:padding="5dp"
+            android:text="手机号码"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/phone"
+            android:textColor="@color/fontleft"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/txtphone"
+            android:background="#00FFFFFF"
+            android:ems="10"
+            android:hint="请填写新手机号码"
+            android:inputType="phone"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/txt_black"
+            android:textColorHint="#D6E2E1"
+            android:textSize="16sp"
+            android:textCursorDrawable="@null"
+            >
+
+            <requestFocus />
+        </EditText>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutphone"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@+id/txtphone"
+            android:layout_alignRight="@+id/phone"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txtphone"
+            android:background="#D6E2E1"
+            android:orientation="vertical"
+            >
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtcode"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:padding="5dp"
+            android:text="手机验证"
+            android:layout_below="@+id/linearLayoutphone"
+            android:layout_alignTop="@+id/code"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/fontleft"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_alignLeft="@+id/phone"
+            android:layout_below="@+id/linearLayoutphone"
+            android:background="#00FFFFFF"
+            android:ems="10"
+            android:hint="请填手机验证码"
+            android:inputType="phone"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/txt_black"
+            android:textColorHint="#D6E2E1"
+            android:textSize="16sp"
+            android:textCursorDrawable="@null"
+            >
+        </EditText>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutcode"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@+id/txtcode"
+            android:layout_alignRight="@+id/phone"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txtcode"
+            android:background="#D6E2E1"
+            android:orientation="vertical"
+            >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/getCode"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/linearLayoutphone"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_yellow"
+            android:text="发送验证码"
+            android:textColor="@color/txt_white"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/linearLayoutcode"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/btn_yellow"
+            android:text="确定"
+            android:textColor="@color/txt_white"
+            android:textSize="@dimen/button" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
