@@ -138,7 +138,7 @@
             </intent-filter>
         </receiver>
 
-       <!-- APP activity -->
+        <!-- APP activity -->
         <activity android:name="cn.lottery.app.activity.LoadingActivity"
             android:screenOrientation="portrait">
             <intent-filter>

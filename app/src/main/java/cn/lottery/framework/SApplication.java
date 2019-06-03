@@ -222,7 +222,6 @@ public class SApplication extends MultiDexApplication {
 				.build();
 
 		/*
-
 		setMutiSelect(boolean)//配置是否多选
 		setMutiSelectMaxSize(int maxSize)//配置多选数量
 		setEnableEdit(boolean)//开启编辑功能
@@ -240,9 +239,7 @@ public class SApplication extends MultiDexApplication {
 		setForceCrop(boolean)//启动强制裁剪功能,一进入编辑页面就开启图片裁剪，不需要用户手动点击裁剪，此功能只针对单选操作
 		setForceCropEdit(boolean)//在开启强制裁剪功能时是否可以对图片进行编辑（也就是是否显示旋转图标和拍照图标）
 		setEnablePreview(boolean)//是否开启预览功能
-
-		* */
-
+		*/
 	}
 
 	
@@ -279,7 +276,9 @@ public class SApplication extends MultiDexApplication {
 		initGalleryFinal();
 		initUShare();
 		initUPush();
-		initOpenIM();
+
+		//阿里通信暂时不用
+		//initOpenIM();
 	}	
 
     private void initImageLoader(){
